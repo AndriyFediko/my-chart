@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My chart</title>
+    <link rel="icon" href="./img/pie-chart.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="chart">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="addBock">
+            <div class="addElementForm addElementFormNotActive">
+                <div class="inputsContainer">
+                    <input id="labelInp" placeholder="Enter item label" class="elemInfo" type="text" maxlength="10">
+                    <input id="valueInp" placeholder="Enter item value" class="elemInfo" type="number">
+                </div>
+                <button class="changeColor btn">
+                    <img class="paintBrush" src="./img/paintBrush.png" alt="changeColor">
+                    <input class="colorInp" type="color">
+                </button>
+                <button class="add btn" id="add">
+                    <img class="plus" src="./img/plus.png" alt="add">
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
